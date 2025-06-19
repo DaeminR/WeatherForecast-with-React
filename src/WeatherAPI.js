@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
-import './Weatherbox.css';
+import DailyTemp from "./DailyTemp";
 
-export default function Weatherbox() {
+export default function WeatherAPI(props) {
     const location = [
         {id : 1, city: "Singapore", lat:1.3521, lng: 103.8198},
         {id : 2, city: "Kuala Lumpur", lat: 3.1319, lng: 101.6841},
@@ -15,10 +15,16 @@ export default function Weatherbox() {
         {id : 10, city: "Seoul", lat: 37.5665, lng: 126.9781}
     ];
 
-    const lat = 1.3521; // Example latitude for Singapore
-    const lng = 103.8198; // Example longitude for Singapore
-
     const [data, setData] = useState([]);
+
+    function getLocation(){
+        for (const item of location) {
+            if (item.city === props.city) {
+                return { lat: item.lat, lng: item.lng };
+            }
+        }
+    }
+    const {lat, lng} = getLocation();   
 
     useEffect(() => {
         console.log("calling weather API");
@@ -30,12 +36,10 @@ export default function Weatherbox() {
     if (!data) {
         return <div>Loading...</div>;
     }
-    console.log(data);
 
     return (
         <div className="weatherbox">
-            <h2>{location[0].city}</h2>
-
+            <DailyTemp data={data} />
         </div>
     );
 }

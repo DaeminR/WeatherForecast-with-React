@@ -26,3 +26,36 @@ p {
   color: white;
   margin: 0px;
 }
+
+.tabs-container {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.tabs {
+    display: flex;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    background-color: gray;
+    border-radius: 5px 5px 0 0;
+    flex-grow: 1;
+}
+
+.tab.active {
+    background-color: blue;
+}
+
+.tab-content {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+.weatherbox {
+    font-size: calc(10px + 2vmin);
+    color: white;;
+}
