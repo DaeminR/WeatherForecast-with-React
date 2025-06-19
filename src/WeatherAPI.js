@@ -31,7 +31,7 @@ export default function WeatherAPI(props) {
         fetch("https://api.open-meteo.com/v1/forecast?latitude="+lat+"&longitude="+lng+"&daily=temperature_2m_max,temperature_2m_min,rain_sum,showers_sum,weather_code&timezone=auto")
         .then((response) => response.json())
         .then(json => setData(json));
-    }, []);
+    }, [props]);
 
     if (!data) {
         return <div>Loading...</div>;
