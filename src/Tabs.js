@@ -26,7 +26,7 @@ const Tabs = ({ tabs }) => {
                 ))}
             </div>
             <div className="tab-content">
-                {activeTab} is Active
+                <p>7-Day Forecast for {activeTab}</p>
                 <WeatherAPI city={activeTab}/>
             </div>
         </div>

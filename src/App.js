@@ -19,7 +19,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Weather Forecast</h1>
-        <p>Get the latest weather updates for your location.</p>
+        <p className="credits">powered by <a href="https://open-meteo.com/">Open_meteo</a></p>
+        <h2>Get the latest weather updates for your location.</h2>
       </header>
       <main>
         <div className="weatherbox">

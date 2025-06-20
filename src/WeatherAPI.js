@@ -36,7 +36,7 @@ export default function WeatherAPI(props) {
     if (!data) {
         return <div>Loading...</div>;
     }
-
+    
     return (
         <div className="weatherbox">
             <DailyTemp data={data} />

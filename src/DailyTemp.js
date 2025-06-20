@@ -1,15 +1,23 @@
+import ShowWeather from "./ShowWeather";
+
 export default function DailyTemp(props) {
-    console.log(props)
+    if (!props.data || !props.data.daily) {
+        return <div>Loading...</div>;
+    }
     const { temperature_2m_max, temperature_2m_min, time, rain_sum, showers_sum, weather_code } = props.data.daily;
-    console.log(temperature_2m_max)
+    const dailyData = time.map((date, index) => ({
+        date: time[index],
+        maxTemp: temperature_2m_max[index],
+        minTemp: temperature_2m_min[index],
+        rain: rain_sum[index],
+        showers: showers_sum[index],
+        weatherCode: weather_code[index]
+    }));
     return(
         <div>
-            <h1>
-                Min Temperature: {temperature_2m_min}
-            </h1>
-            <h1>
-                Max Temperature: {temperature_2m_max}
-            </h1>
+            {dailyData.map((day, index) => (
+                <ShowWeather key={index} data={day}/>
+            ))}
         </div>
     )
 

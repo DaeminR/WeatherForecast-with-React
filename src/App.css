@@ -2,23 +2,31 @@
   text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  min-height: 20rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  min-height:20rem;
   font-size: calc(10px + 2vmin);
-  color: white;;
+  color: white;
+  text-align: center;
+  background: url(https://images4.alphacoders.com/107/1072743.jpg);
+  background-size: cover;
+  background-position: bottom;
+
 }
 
-.App-link {
+.App-header h1 {
+  margin-bottom: 0;;
+}
+
+.credits {
+  font-size: calc(5px + 1vmin);
+  color: white;
+  padding-left: 17rem;
+  font-style: italic;
+}
+
+a {
   color: #61dafb;
+  text-decoration: none;
 }
 
 p {
@@ -52,8 +60,16 @@ p {
 }
 
 .tab-content {
-    border: 1px solid #ddd;
+    align-items: center;;
     padding: 10px;
+    width: 100%;
+    margin: auto;
+}
+
+.tab-content p{
+    font-size: calc(10px + 1vmin);
+    color: white;
+    margin-bottom: 10px;
 }
 .weatherbox {
     font-size: calc(10px + 2vmin);

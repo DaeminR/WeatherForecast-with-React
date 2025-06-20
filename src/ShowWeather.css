@@ -1,0 +1,62 @@
+.weather-card {
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 17rem;
+    width: 50rem;
+    margin-bottom: 2rem;
+}
+
+.weather-card h3{
+    margin: 0;
+
+}
+
+.weather-icon {
+    margin-left: 1rem;
+    display: absolute;
+    float: left;
+    width: 12rem;
+    height: 12rem;
+}
+
+.weather-details h5 {
+    margin: 1rem;
+    text-align: left;
+}
+.weather-details {
+    margin-left: 12rem;
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.temperature-style {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.temperature-bar {
+    margin: auto;
+    width: 80%;
+    height: 20px;
+    background: linear-gradient(to right, rgb(40, 223, 247), rgb(233, 132, 17));
+    border-radius: 50px;
+}
+
+.temperature-values {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem;
+}
+
+.precipitation-values {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 1rem;
+}
+
+.precipitation-values p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
