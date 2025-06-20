@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/WeatherForecast-with-React/static/css/main.cadf24be.css",
+    "main.js": "/WeatherForecast-with-React/static/js/main.5ad50539.js",
+    "static/js/453.3f6425ac.chunk.js": "/WeatherForecast-with-React/static/js/453.3f6425ac.chunk.js",
+    "index.html": "/WeatherForecast-with-React/index.html",
+    "main.cadf24be.css.map": "/WeatherForecast-with-React/static/css/main.cadf24be.css.map",
+    "main.5ad50539.js.map": "/WeatherForecast-with-React/static/js/main.5ad50539.js.map",
+    "453.3f6425ac.chunk.js.map": "/WeatherForecast-with-React/static/js/453.3f6425ac.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cadf24be.css",
+    "static/js/main.5ad50539.js"
+  ]
+}
